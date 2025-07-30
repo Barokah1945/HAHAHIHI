@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preorder Produk</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <header>
+    <h1>Preorder Produk</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="preorder.html">Preorder</a>
+      <a href="qris.html">QRIS</a>
+    </nav>
+  </header>
+  <main>
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="all">Semua Kategori</option>
+      </select>
+      <select id="dayFilter">
+        <option value="all">Semua Hari Kirim</option>
+      </select>
+    </div>
+    <div id="productList"></div>
+  </main>
+  <aside class="cart">
+    <h2>Keranjang</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: <span id="cartTotal">Rp0</span></p>
+    <button id="checkoutBtn">Checkout</button>
+  </aside>
+  <script src="app.js"></script>
+</body>
+</html>
